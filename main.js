@@ -66,6 +66,8 @@ var H1 = document.getElementById("H1");
 var playpause = document.getElementById("playpause")
 var stepforward = document.getElementById("stepforward")
 var stepback = document.getElementById("stepback")
+var rewind = document.getElementById("rewind")
+var fastforward = document.getElementById("fastforward")
 
 var bb1 = document.createElement("img");
 bb1.id = "bb1";
@@ -279,3 +281,58 @@ stepback.addEventListener("click", function() {
 	if (x===1) {movepiece(bn2,G8)}
 	if (x===0) {movepiece(wp4,D2)}
 });
+
+rewind.addEventListener("click", function() {
+	movepiece(wn2,G1);
+	movepiece(bb2,F8);
+	movepiece(wb2,F1);
+	movepiece(bp4,D7);
+	movepiece(wp7,G2);
+	movepiece(bp5,E7);
+	movepiece(wp3,C2);
+	movepiece(bn2,G8);
+	movepiece(wp4,D2);
+	x=0
+});
+fastforward.addEventListener("click", function() {
+	movepiece(wp4,D4);
+	movepiece(bn2,F6);
+	movepiece(wp3,C4);
+	movepiece(bp5,E6);
+	movepiece(wp7,G3);
+	movepiece(bp4,D5);
+	movepiece(wb2,G2);
+	movepiece(bb2,E7);
+	movepiece(wn2,F3);
+	x=9
+});
+
+// playpause.addEventListener("click", function() {
+// 	setInterval(function(){
+// 		x+=1;
+// 		movepiece(wp4,D4)}, 2000);
+// 	setInterval(function(){
+// 		x+=1;
+// 		movepiece(bn2,F6)}, 2000);
+// 	setInterval(function(){
+// 		x+=1;
+// 		movepiece(wp3,C4)}, 2000);
+// 	setInterval(function(){
+// 		x+=1
+// 		movepiece(bp5,E6)}, 2000)
+// 	setInterval(function(){
+// 		x+=1
+// 		movepiece(wp7,G3)}, 2000)
+// 	setInterval(function(){
+// 		x+=1
+// 		movepiece(bp4,D5)}, 2000)
+// 	setInterval(function(){
+// 		x+=1
+// 		movepiece(wb2,G2)}, 2000)
+// 	setInterval(function(){
+// 		x+=1
+// 		movepiece(bb2,E7)}, 2000)
+// 	setInterval(function(){
+// 		x+=1
+// 		movepiece(wn2,F3)}, 2000)
+// });
