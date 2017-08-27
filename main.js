@@ -307,32 +307,6 @@ fastforward.addEventListener("click", function() {
 	x=9
 });
 
-// playpause.addEventListener("click", function() {
-// 	setInterval(function(){
-// 		x+=1;
-// 		movepiece(wp4,D4)}, 2000);
-// 	setInterval(function(){
-// 		x+=1;
-// 		movepiece(bn2,F6)}, 2000);
-// 	setInterval(function(){
-// 		x+=1;
-// 		movepiece(wp3,C4)}, 2000);
-// 	setInterval(function(){
-// 		x+=1
-// 		movepiece(bp5,E6)}, 2000)
-// 	setInterval(function(){
-// 		x+=1
-// 		movepiece(wp7,G3)}, 2000)
-// 	setInterval(function(){
-// 		x+=1
-// 		movepiece(bp4,D5)}, 2000)
-// 	setInterval(function(){
-// 		x+=1
-// 		movepiece(wb2,G2)}, 2000)
-// 	setInterval(function(){
-// 		x+=1
-// 		movepiece(bb2,E7)}, 2000)
-// 	setInterval(function(){
-// 		x+=1
-// 		movepiece(wn2,F3)}, 2000)
-// });
+playpause.addEventListener("click", function() {
+	alert("HEY");
+});

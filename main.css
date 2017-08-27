@@ -73,3 +73,6 @@ body {
 #fastforward {
 	grid-column: 9/10;
 }
+.fa-pause {
+	margin-right: 5px
+}
